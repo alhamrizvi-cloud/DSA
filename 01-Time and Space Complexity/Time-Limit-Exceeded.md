@@ -133,11 +133,6 @@ If:
 
 👉 **TLE = your code is doing too much work**
 
-Got it — let’s break down what’s shown in your screenshot in a **very simple + exam-ready way** 👇
-
----
-
-## 🧠 What the board is explaining
 
 ### Given:
 
