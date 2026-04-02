@@ -73,3 +73,57 @@ else:
 **Why we focus on the Worst Case:**
 It provides a **guarantee**. If a developer knows the code performs efficiently even in the worst-case scenario (e.g., maximum server load or largest possible input), the system is considered reliable and scalable.
 
+Here is the updated content for your repository, incorporating the new rules, notations, and the introduction to space complexity.
+
+---
+
+## Rule 2: Ignore Constants and Lower-Order Terms
+When calculating Big-O, we only care about the term that grows the fastest as $n$ approaches infinity.
+
+**Example:** $TC = O(8n^6 + 3n^2 + 15)$
+1.  **Drop Constants:** The $+15$ is a fixed number. As $n$ becomes massive (like $10^6$), 15 becomes irrelevant.
+2.  **Drop Coefficients:** The multiplier $8$ is a constant. We focus on the rate of growth, so $8n^6$ is simplified to $n^6$.
+3.  **Ignore Lower-Order Bounds:** $n^6$ grows much faster than $n^2$. For very large inputs, the $n^2$ term contributes almost nothing to the total time compared to $n^6$.
+
+**Final Time Complexity:** $O(n^6)$
+
+---
+
+## Types of Time Complexity
+In interviews and academic theory, we use three main notations to describe the bounds of an algorithm:
+
+| Notation | Bound | Case | Description |
+| :--- | :--- | :--- | :--- |
+| **Big-O ($O$)** | Upper Bound | **Worst Case** | The algorithm will **never** take more time than this. |
+| **Theta ($\Theta$)** | Tight Bound | **Average Case** | The actual/exact growth rate of the algorithm. |
+| **Omega ($\Omega$)** | Lower Bound | **Best Case** | The algorithm will take **at least** this much time. |
+
+---
+
+## Nested Loops and $O(n^2)$
+
+### Example 1: Independent Nested Loop
+```python
+for i in range(1, n + 1):       # Runs n times
+    for j in range(1, n + 1):   # Runs n times for every i
+        print(i, j)
+```
+Total operations: $n \times n = n^2$.
+**Time Complexity:** $O(n^2)$
+
+### Example 2: Dependent Nested Loop
+```python
+for i in range(1, n + 1):
+    for j in range(1, i + 1): # j depends on the current value of i
+        print("hello")
+```
+**Calculation:**
+* When $i=1$, $j$ runs 1 time.
+* When $i=2$, $j$ runs 2 times.
+* ...
+* When $i=n$, $j$ runs $n$ times.
+
+Total operations = $1 + 2 + 3 + \dots + n = \frac{n(n+1)}{2}$
+Expanding this, we get: $\frac{n^2 + n}{2} \rightarrow \frac{1}{2}n^2 + \frac{1}{2}n$
+Applying **Rule 2** (ignore constants and lower terms):
+**Time Complexity:** $O(n^2)$
