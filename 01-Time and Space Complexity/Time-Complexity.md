@@ -1,4 +1,4 @@
-# Time Complexity and Space Complexity
+# Time Complexity
 
 ## 1. The Common Misconception
 A common mistake is defining **Time Complexity** as the literal time (in seconds or milliseconds) it takes to run a piece of code.
