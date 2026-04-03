@@ -1,5 +1,5 @@
 x = 5873
-
+total = 0
 while x > 0:
   last_digit = x % 10
   #which will give us input 3
