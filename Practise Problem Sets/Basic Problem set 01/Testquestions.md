@@ -6,7 +6,7 @@ Passing Marks: 90/135
 ### **Module Marks**
 
 * Each question max marks = 10
-* Total = 90
+* Total = 135
 
 ---
 
