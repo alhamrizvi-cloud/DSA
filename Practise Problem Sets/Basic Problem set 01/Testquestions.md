@@ -1,5 +1,7 @@
 
-## **📝 Interview Problem Set: Number Manipulation & DSA**
+## **📝 Interview Problem Set: DSA**
+
+Passing Marks: 90/135
 
 ### **Module Marks**
 
