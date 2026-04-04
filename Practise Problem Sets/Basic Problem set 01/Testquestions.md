@@ -1,6 +1,3 @@
-Perfect! Since you’ve already covered **printing digits, counting digits, reversing numbers, palindrome check, Armstrong numbers, and printing all factors**, I’ll create a set of **9 DSA-style problems** in the form of an **interview scenario**, with **marks** for each problem to make it feel real. I’ll divide them as **easy, medium, and tricky**.
-
----
 
 ## **📝 Interview Problem Set: Number Manipulation & DSA**
 
@@ -128,8 +125,4 @@ Input: `100 200` → Output: `153`
 | Tricky     | 3         | 20         | 60    |
 | **Total**  | 9         | —          | 135   |
 
----
-
-If you want, I can **also write Python starter code templates** for all 9 questions **with comments and expected outputs** so you can **practice like an interview**.
-
-Do you want me to do that next?
+-
